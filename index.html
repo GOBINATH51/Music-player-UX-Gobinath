@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Simple Music Player</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+body::before {
+    content: "SPOTIFY";
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: lightgreen;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111827;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+/* Player box */
+.player {
+    width: 280px;
+    background: rgb(32, 186, 32);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Album art */
+.album {
+    width: 180px;
+    height: 200px;
+    background: #22c55e;
+    border-radius: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+/* Song info */
+h2 {
+    font-size: 18px;
+    margin: auto;
+}
+
+p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Progress bar */
+.progress {
+    height: 6px;
+    background: black;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.progress span {
+    display: block;
+    width: 26%;
+    height: 100%;
+    background: brown;
+    border-radius: 10px;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    background: #22c55e;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.play {
+    background: #22c55e;
+    color: #000;
+}
+</style>
+</head>
+
+<body>
+
+<div class="player">
+    <br>
+    <div class="album"><img src="https://t4.ftcdn.net/jpg/01/06/47/61/360_F_106476142_zMZkkTkhMeq0DIjV20oJI00e3QXLYIGN.jpg"width="300" height="220"></div>
+
+    <br>
+    <p style="font-family:blacksmith;font-size:25px;color:rgb(0, 0, 0)">Arcade</p>
+
+    <div class="progress">
+        <span></span>
+    </div>
+
+    <div class="controls">
+        <div class="btn">⏮</div>
+        <div class="btn play">▶</div>
+        <div class="btn">⏭</div>
+    </div>
+
+</div>
+
+</body>
+</html>
